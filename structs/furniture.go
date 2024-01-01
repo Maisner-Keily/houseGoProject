@@ -1,4 +1,4 @@
-package _struct
+package structs
 
 import (
 	"houseGoProject/enums/Materials"

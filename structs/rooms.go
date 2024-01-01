@@ -1,4 +1,4 @@
-package _struct
+package structs
 
 type Room struct {
 	width  float32

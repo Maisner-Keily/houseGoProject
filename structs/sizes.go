@@ -1,4 +1,4 @@
-package _struct
+package structs
 
 type Sizes struct {
 	Width  float32

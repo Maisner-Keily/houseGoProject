@@ -1,4 +1,4 @@
-package _struct
+package structs
 
 type TV struct {
 	technique Techniques

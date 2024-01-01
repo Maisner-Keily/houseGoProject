@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"houseGoProject/enums/Materials"
-	structs "houseGoProject/struct"
+	structs "houseGoProject/structs"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-package _struct
+package structs
 
 type WashingMachine struct {
 	technique        Techniques

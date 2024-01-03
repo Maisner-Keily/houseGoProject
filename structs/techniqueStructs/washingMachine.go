@@ -1,7 +1,9 @@
-package structs
+package techniqueStructs
+
+import "houseGoProject/structs"
 
 type WashingMachine struct {
-	technique        Techniques
+	technique        structs.Techniques
 	name             string
 	speed            int
 	maxClothesWeight int

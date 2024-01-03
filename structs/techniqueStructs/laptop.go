@@ -1,7 +1,9 @@
-package structs
+package techniqueStructs
+
+import "houseGoProject/structs"
 
 type Laptop struct {
-	technique   Techniques
+	technique   structs.Techniques
 	name        string
 	diagonal    int
 	graphicCard string

@@ -6,6 +6,7 @@ import (
 )
 
 type HouseMember struct {
+	ID      int
 	Name    string
 	Surname string
 	Gender  Genders.Gender

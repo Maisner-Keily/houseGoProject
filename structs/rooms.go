@@ -6,6 +6,7 @@ import (
 )
 
 type Room struct {
+	ID              int
 	Width           float32
 	Length          float32
 	Height          float32

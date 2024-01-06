@@ -1,6 +1,7 @@
 package structs
 
 type House struct {
+	ID          int
 	country     string
 	city        string
 	street      string

@@ -6,9 +6,9 @@ import (
 )
 
 type Room struct {
-	width           float32
-	length          float32
-	height          float32
+	Width           float32
+	Length          float32
+	Height          float32
 	Beds            []furnitureStructs.Bed
 	BedsideTables   []furnitureStructs.BedsideTable
 	Laptops         []techniqueStructs.Laptop

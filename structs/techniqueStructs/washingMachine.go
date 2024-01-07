@@ -4,8 +4,8 @@ import "houseGoProject/structs"
 
 type WashingMachine struct {
 	ID               int
-	technique        structs.Techniques
-	name             string
-	speed            int
-	maxClothesWeight int
+	Technique        structs.Techniques
+	Name             string
+	Speed            int
+	MaxClothesWeight int
 }

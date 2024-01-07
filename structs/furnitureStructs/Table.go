@@ -6,6 +6,7 @@ import (
 )
 
 type Table struct {
+	ID        int
 	Furniture structs.Furniture
 	Sizes     types.Sizes
 	Name      string

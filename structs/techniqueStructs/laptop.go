@@ -4,9 +4,9 @@ import "houseGoProject/structs"
 
 type Laptop struct {
 	ID          int
-	technique   structs.Techniques
-	name        string
-	diagonal    int
-	graphicCard string
-	processor   string
+	Technique   structs.Techniques
+	Name        string
+	Diagonal    int
+	GraphicCard string
+	Processor   string
 }

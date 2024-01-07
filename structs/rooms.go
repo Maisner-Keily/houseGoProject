@@ -1,6 +1,7 @@
 package structs
 
 import (
+	"houseGoProject/enums/RoomTypes"
 	"houseGoProject/structs/furnitureStructs"
 	"houseGoProject/structs/techniqueStructs"
 )
@@ -8,6 +9,7 @@ import (
 type Room struct {
 	ID              int
 	Sizes           Sizes
+	RoomType        RoomTypes.RoomType
 	Beds            []furnitureStructs.Bed
 	BedsideTables   []furnitureStructs.BedsideTable
 	Laptops         []techniqueStructs.Laptop

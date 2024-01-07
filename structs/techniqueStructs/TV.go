@@ -4,8 +4,8 @@ import "houseGoProject/structs"
 
 type TV struct {
 	ID        int
-	technique structs.Techniques
-	name      string
-	diagonal  int
-	isSmart   bool
+	Technique structs.Techniques
+	Name      string
+	Diagonal  int
+	IsSmart   bool
 }

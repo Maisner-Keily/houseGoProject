@@ -1,11 +1,7 @@
 package furnitureStructs
 
-import (
-	"houseGoProject/structs"
-)
-
 type Table struct {
 	ID        int
-	Furniture structs.Furniture
+	Furniture Furniture
 	Name      string
 }

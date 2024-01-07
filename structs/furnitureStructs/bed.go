@@ -1,10 +1,8 @@
 package furnitureStructs
 
-import "houseGoProject/structs"
-
 type Bed struct {
 	ID        int
-	Furniture structs.Furniture
+	Furniture Furniture
 	Name      string
 	Mattress  string
 }

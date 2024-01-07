@@ -1,24 +1,20 @@
 package main
 
 import (
+	"context"
 	"fmt"
-	"houseGoProject/enums/Materials"
-	structs "houseGoProject/structs"
+	"os"
+
+	"github.com/jackc/pgx/v5"
 )
 
 func main() {
-	var x = structs.Furniture{
-		Sizes: structs.Sizes{
-			Width:  11.0,
-			Length: 16.0,
-			Height: 19.0,
-		},
-		Material: Materials.Wood,
+	ctx := context.Background()
+	url := "postgres://postgres:admin@localhost:5432"
+	pg, err := pgx.Connect(ctx, url)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Unable to connect to database: %v\n", err)
+		os.Exit(1)
 	}
-
-	fmt.Println(x.Sizes.Width)
-	fmt.Println(x.Sizes.Height)
-	fmt.Println(x.Sizes.Length)
-	fmt.Println(x.Material)
-	//fmt.Println("2131221")
+	defer pg.Close(context.Background())
 }

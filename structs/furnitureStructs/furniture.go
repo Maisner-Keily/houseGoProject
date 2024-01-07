@@ -1,10 +1,10 @@
-package structs
+package furnitureStructs
 
 import (
 	"houseGoProject/enums/Materials"
 )
 
 type Furniture struct {
-	Sizes    Sizes
+	Sizes    FurnitureSizes
 	Material Materials.Material
 }

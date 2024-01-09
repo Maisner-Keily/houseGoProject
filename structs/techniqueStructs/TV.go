@@ -4,6 +4,6 @@ type TV struct {
 	ID        int
 	Technique Techniques
 	Name      string
-	Diagonal  int
+	Diagonal  float32
 	IsSmart   bool
 }

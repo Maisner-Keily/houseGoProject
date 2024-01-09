@@ -4,7 +4,7 @@ type Laptop struct {
 	ID          int
 	Technique   Techniques
 	Name        string
-	Diagonal    int
+	Diagonal    float32
 	GraphicCard string
 	Processor   string
 }

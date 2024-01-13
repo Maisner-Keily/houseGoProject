@@ -12,7 +12,6 @@ services:
       POSTGRES_PASSWORD: "admin"
     ports:
       - "5436:5432"
-#    network_mode: bridge
 
   house_go_project:
     build: ./
@@ -21,8 +20,5 @@ services:
       - 8000:8000
     depends_on:
       - postgres
-    environment:
-      - DB_NAME=mydockerhouse
-      - DB_USER=postgres
-      - DB_PASSWORD=admin
-#    network_mode: bridge
+    env_file:
+      - .env

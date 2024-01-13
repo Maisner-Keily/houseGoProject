@@ -8,7 +8,7 @@ import (
 )
 
 func getConn(ctx context.Context) pgx.Conn {
-	url := "postgres://postgres:admin@postgres:5432/myhouse"
+	url := "postgres://postgres:admin@postgres:5432/mydockerhouse"
 	conn, err := pgx.Connect(ctx, url)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Unable to connect to database: %v\n", err)

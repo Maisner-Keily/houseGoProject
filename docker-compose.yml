@@ -7,7 +7,7 @@ services:
     volumes:
       - ./.database/postgres/data:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: "myhouse"
+      POSTGRES_DB: "mydockerhouse"
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "admin"
     ports:
@@ -22,7 +22,7 @@ services:
     depends_on:
       - postgres
     environment:
-      - DB_NAME=myhouse
+      - DB_NAME=mydockerhouse
       - DB_USER=postgres
       - DB_PASSWORD=admin
 #    network_mode: bridge

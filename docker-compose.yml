@@ -1,0 +1,28 @@
+version: '3.3'
+
+services:
+  postgres:
+    restart: always
+    image: postgres:16-alpine
+    volumes:
+      - ./.database/postgres/data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: "myhouse"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "admin"
+    ports:
+      - "5436:5432"
+#    network_mode: bridge
+
+  house_go_project:
+    build: ./
+    command: ./house_go_project
+    ports:
+      - 8000:8000
+    depends_on:
+      - postgres
+    environment:
+      - DB_NAME=myhouse
+      - DB_USER=postgres
+      - DB_PASSWORD=admin
+#    network_mode: bridge
